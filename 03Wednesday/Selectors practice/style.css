@@ -1,0 +1,46 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    border: 0.5rem solid orange;
+}
+
+dd:nth-of-type(4) {
+    text-decoration: underline;
+}
+
+dl,
+ul {
+    margin-left: 35rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+
+h1,
+h3 {
+    text-align: center;
+}
+
+li:nth-of-type(2n+2) {
+    color: green;
+}
+
+ul li:first-child {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+.subtitle:nth-of-type(2) {
+    color: blue;
+}
+
+.theHeading {
+    border-bottom: 0.5rem dashed orange;
+    padding-bottom: 1rem;
+}

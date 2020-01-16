@@ -1,0 +1,7 @@
+-git init: initializes a brand new Git repository and begins tracking an existing directory; it adds a hidden subfolder within the existing directory that houses the internal data structure required for version control;
+-git clone: creates a local copy of a project that already exists remotely; the clone includes all the project’s files, history, and branches;
+-git push: updates the remote repository with any commits made locally;
+-gitk: default git UI tool;
+-git status: shows status;
+-git add file/folder: moves file/folder to the staging area;
+-git log: displays information about all the previous commits;

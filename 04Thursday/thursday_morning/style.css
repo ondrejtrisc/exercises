@@ -1,0 +1,35 @@
+nav .link {
+    color: crimson;
+    text-decoration: none;
+}
+
+#about blockquote {
+    background-color: #eaeaea;
+}
+
+#users span {
+    font-weight: bold;
+}
+
+#users span:nth-of-type(2) {
+    color: crimson;
+}
+
+#creators a:nth-of-type(2n+1) {
+    font-family: Lato;
+    text-decoration: none;
+}
+
+#creators a:nth-of-type(2n) {
+    font-family: 'PT Serif';
+    font-weight: bold;
+}
+
+#cta h2 {
+    color: crimson;
+    font-family: Lato;
+}
+
+ul li:nth-of-type(odd) {
+    text-decoration: underline;
+}

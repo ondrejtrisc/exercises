@@ -1,0 +1,30 @@
+body {
+    font-family: 'Trebuchet MS';
+    color: white;
+    background-color: #444444;
+    text-align: center;
+}
+
+a {
+    color: rgba(255, 245, 253, 0.5);
+}
+
+a:hover {
+    color: white;
+}
+
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+h2 {
+    background-color: white;
+}
+
+.the-text { color: blue; }
+
+.the-text.colorized { color: pink; font-size: 2rem; }
