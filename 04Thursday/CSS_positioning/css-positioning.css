@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+
+html {
+    background: transparent url('background-grid.png') left top repeat scroll;
+}
+
+body {
+    margin: 0;
+    border: 1px solid red;
+    height: 240px;
+}
+
+.one {
+    width: 20vw;
+    height: 10em;
+    padding: 1em;
+    border: 1px solid blue;
+    border-bottom: 1rem solid blue;
+}
+
+.two {
+    border: 1px solid green;
+    display: inline;
+    background-color: green;
+}
+
+.two > span {
+    border: 1px solid orange;
+}
