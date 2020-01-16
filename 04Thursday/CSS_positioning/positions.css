@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: transparent url(background-grid.png);
+}
+
+body {
+    margin: 0;
+}
+
+.one {
+    border: 10px solid blue;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.two {
+    border: 10px solid green;
+    width: 20em;
+    height: 20em;
+    position: relative;
+}
+
+.three {
+    border: 10px solid orange;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    z-index: 1;
+    
+}
+
+.four {
+    border: 10px solid purple;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+.five {
+    border: 10px solid black;
+    position: fixed;
+    top: 100px;
+    right: 0;
+}
