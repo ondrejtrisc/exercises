@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.cards div {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    margin: 2em;
+    width: 25%;
+}
