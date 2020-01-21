@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    @media screen {
+        color: red;
+    }
+
+    @media (orientation: landscape) {
+        background-color: green;
+    }
+}
