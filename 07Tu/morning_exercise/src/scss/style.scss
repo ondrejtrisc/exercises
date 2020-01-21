@@ -1,0 +1,36 @@
+@import 'colors';
+@import 'sizes';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/img/got-bg.jpg");
+    background-size: auto 100%;
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: $primary_text;
+    display: flex;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em 10em 2em 10em;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 3.7em;
+    }
+}
