@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import "variables";
+@import "icons";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.sidebar {
+  position: fixed;
+  
+  width: 16rem;
+  height: 100vh;
+  padding: 1rem 2rem;
+
+  background-color: $color-bg-primary;
+  color: $color-text-sidebar;
+  
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__logo {
+    background-image: url('/img/vibecast-logo.svg');
+    background-size: contain;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    line-height: 2rem;
+    color: $color-text-sidebar;
+  }
+
+  &__intro {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  &__intro span {
+    color: $color-text-secondary;
+  }
+
+  &__button {
+    background-color: $color-btn-primary;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 2rem;
+    max-width: 8rem;
+
+    img {
+      width: 1rem;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
+.podcast {
+  margin-left: 16rem;
+}
+
+.podcast-heading {
+  display: flex;
+  align-items: center;
+  
+  height: 5rem;
+  padding: 1rem 2.5rem;
+  
+  background-color: $color-bg-secondary;
+
+  &__logo {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    margin-right: 1rem;
+  }
+
+  &__title {
+    padding-bottom: 0.5rem;
+    
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+.episode {
+  border-top: 3px solid $color-text-secondary;
+  margin: 2rem 0 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__line {
+    display: flex;
+    align-items: center;
+  }
+
+  &__thumbnail {
+    width: 5rem;
+    margin-right: 1rem;
+  }
+
+  &__number {
+    color: $color-text-secondary;
+    font-size: 5rem;
+    margin-right: 1rem;
+  }
+
+  &__guest {
+    font-size: 3rem;
+  }
+
+  &__date_and_time {
+    color: $color-text-secondary;
+
+    img {
+      width: 1rem;
+    }
+  }
+}
