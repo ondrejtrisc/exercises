@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("/img/coffee-photo.jpg");
+    background-size: 100% auto;
+    font-family: sans-serif;
+    color: lightgrey;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main {
+    background-color: rgba(83, 51, 29, 0.5);
+    
+    height: 100vh;
+    
+    width: 30%;
+    padding: 3em;
+
+    @media (max-width: 1200px) {
+        width: 40%;
+        padding: 2em;
+    }
+
+    @media (max-width: 900px) {
+        width: 50%;
+        padding: 2em;
+    }
+
+    @media (max-width: 800px) {
+        width: 60%;
+        padding: 2em;
+    }
+
+    @media (max-width: 700px) {
+        width: 80%;
+        padding: 2em;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 2em;
+    }
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .button {
+        width: 10em;
+        height: 5em;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin: 2em;
+        background-color: rgb(161, 35, 35);
+        font-size: 1.7em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
