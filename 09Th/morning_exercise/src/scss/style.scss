@@ -1,0 +1,73 @@
+@import 'colors';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: $background1;
+}
+
+header {
+    text-align: center;
+    background-color: $background2;
+    padding: 2rem;
+
+    h1 {
+        margin: 0;
+    }
+    
+    p {
+        color: $text2;
+        font-size: 1.5rem;
+    }
+}
+
+.margin {
+    background-color: $background4;
+    min-height: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
+
+    padding: 2rem;
+}
+
+.post {
+
+    margin: 1rem;
+    
+    &__picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $background3;
+        color: $text3;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+    
+    img {
+        width: 3rem;
+    }
+
+    &__text {
+        padding: 2rem;
+        background-color: $background5;
+        margin: 0;
+        font-weight: bold;
+    }
+}
