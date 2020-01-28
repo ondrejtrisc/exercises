@@ -7,9 +7,9 @@
 // document.write(row + column);
 
 
-let numberOfColumns = Number(prompt("Number of columns:"));
-let seatNumber = Number(prompt("Seat number:"));
-let column = (seatNumber - 1) % numberOfColumns + 1;
-let rowNumber = Math.ceil(seatNumber / numberOfColumns);
-let row = String.fromCharCode(rowNumber + 64);
+const numberOfColumns = Number(prompt("Number of columns:"));
+const seatNumber = Number(prompt("Seat number:"));
+const column = (seatNumber - 1) % numberOfColumns + 1;
+const rowNumber = Math.ceil(seatNumber / numberOfColumns);
+const row = String.fromCharCode(rowNumber + 64);
 document.write(row + column);
