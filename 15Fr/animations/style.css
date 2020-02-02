@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* .box {
+  width: 500px;
+  height: 300px;
+  background-color: orange;
+  transition: 2s;
+}
+
+.box--anim {
+  background-color: blue;
+  width: 300px;
+  margin-left: 5rem;
+  animation: my-animation 2s;
+}
+
+@keyframes my-animation {
+	0% { transform: initial; }
+	50% { transform: rotate(60deg); }
+	100% { transform: initial; }
+} */
+
+.spinning {
+  animation: my-animation 1s infinite linear;
+}
+
+@keyframes my-animation {
+	0% { transform: initial; }
+	100% { transform: rotate(360deg); }
+}
