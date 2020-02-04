@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let convo = "";
   for (const message of conversation) {
     convo += `<div class="block block--${message.side}">
-                <img src="${message.name}.png">
+                <img src="${message.name.toLowerCase()}.png">
                 <div class="message message--${message.side}">
                   ${message.text}
                 </div>
