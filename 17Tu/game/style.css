@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+  font-family: sans-serif;
+}
+
+.board {
+  border: 1px solid black;
+  height: 80vh;
+}
+
+.chip {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.chip--hidden {
+  display: none;
+}
+
+.one {
+  background-color: orange;
+}
+
+.two {
+  background-color: blue;
+}
+
+.five {
+  background-color: red;
+}

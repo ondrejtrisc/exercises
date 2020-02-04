@@ -192,16 +192,41 @@ const conversation = [
 ];
 
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const convoElement = document.querySelector('#convo');
+//   let convo = "";
+//   for (const message of conversation) {
+//     convo += `<div class="block block--${message.side}">
+//                 <img src="${message.name.toLowerCase()}.png">
+//                 <div class="message message--${message.side}">
+//                   ${message.text}
+//                 </div>
+//               </div>`;
+//   }
+//   convoElement.innerHTML = convo;
+// });
+
+
+for (const message of conversation) {
+  message.likes = 0;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const convoElement = document.querySelector('#convo');
-  let convo = "";
   for (const message of conversation) {
-    convo += `<div class="block block--${message.side}">
-                <img src="${message.name.toLowerCase()}.png">
-                <div class="message message--${message.side}">
-                  ${message.text}
-                </div>
-              </div>`;
+    let messageElement = document.createElement('div');
+    messageElement.className = `block block--${message.side}`;
+    messageElement.innerHTML = `<img src="${message.name.toLowerCase()}.png">
+                                <div class="message message--${message.side}">
+                                  ${message.text}
+                                </div>`;
+    let button = document.createElement('button');
+    button.innerHTML = `Like ${message.likes}`;
+    button.addEventListener('click', () => {
+      message.likes++;
+      button.innerHTML = `Like ${message.likes}`;
+    });
+    messageElement.appendChild(button);
+    convoElement.appendChild(messageElement);
   }
-  convoElement.innerHTML = convo;
 });
