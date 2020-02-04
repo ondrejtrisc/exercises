@@ -258,44 +258,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // numbers = [1, 2, 3, 1];
 
-  // const generateSubsequences = array => {
-  //   if (array.length === 1) {
-  //     return [[array[0]]];
-  //   }
-  //   const first = array.shift();
-  //   const firstHalf = generateSubsequences(array);
-  //   const secondHalf = [];
-  //   for (const x of firstHalf) {
-  //     const item = x.slice();
-  //     item.unshift(first);
-  //     secondHalf.push(item);
-  //   }
-  //   return firstHalf.concat(secondHalf);
-  // }
-  // const subsequences = generateSubsequences(numbers);
-  // const ascendingSubsequences = [];
-  // for (const sequence of subsequences) {
-  //   let ascending = true;
-  //   for (let i = 1; i < sequence.length; i++) {
-  //     if (sequence[i] <= sequence[i-1]) {
-  //       ascending = false;
-  //       break;
-  //     }
-  //   }
-  //   if (ascending) {
-  //     ascendingSubsequences.push(sequence);
-  //   }
-  // }
-  // let maxLength = -Infinity;
-  // let maxSequence = [];
-  // for (const sequence of ascendingSubsequences) {
-  //   if (sequence.length > maxLength) {
-  //     maxLength = sequence.length;
-  //     maxSequence = sequence;
-  //   }
-  // }
-  // console.log(maxLength);
-  // console.log(maxSequence);
+  const generateSubsequences = array => {
+    if (array.length === 0) {
+      return [[]];
+    }
+    const first = array.shift();
+    const firstHalf = generateSubsequences(array);
+    const secondHalf = [];
+    for (const x of firstHalf) {
+      const item = x.slice();
+      item.unshift(first);
+      secondHalf.push(item);
+    }
+    return firstHalf.concat(secondHalf);
+  }
+  const subsequences = generateSubsequences(numbers);
+  const ascendingSubsequences = [];
+  for (const sequence of subsequences) {
+    let ascending = true;
+    for (let i = 1; i < sequence.length; i++) {
+      if (sequence[i] <= sequence[i-1]) {
+        ascending = false;
+        break;
+      }
+    }
+    if (ascending) {
+      ascendingSubsequences.push(sequence);
+    }
+  }
+  let maxLength = -Infinity;
+  let maxSequence = [];
+  for (const sequence of ascendingSubsequences) {
+    if (sequence.length > maxLength) {
+      maxLength = sequence.length;
+      maxSequence = sequence;
+    }
+  }
+  console.log(maxLength);
+  console.log(maxSequence);
 
   // const departures = [494, 499, 500, 517, 520, 523, 530, 556, 563, 576, 586, 613, 625];
   // const timeFormat = time => {
@@ -327,21 +327,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // };
   // console.log(compress([3, 3, 3, 2, 2, 5, 5, 5, 4, 1, 1, 1]));
 
-    const pack = (array) => {
-      const ret = [];
-      let current = [array[0]];
-      for (let i = 1; i < array.length; i++) {
-        if (array[i] === current[current.length - 1]) {
-          current.push(array[i]);
-        }
-        else {
-          ret.push(current);
-          current = [array[i]];
-        }
-      }
-      ret.push(current);
-      return ret;
-    };
+    // const pack = (array) => {
+    //   const ret = [];
+    //   let current = [array[0]];
+    //   for (let i = 1; i < array.length; i++) {
+    //     if (array[i] === current[current.length - 1]) {
+    //       current.push(array[i]);
+    //     }
+    //     else {
+    //       ret.push(current);
+    //       current = [array[i]];
+    //     }
+    //   }
+    //   ret.push(current);
+    //   return ret;
+    // };
   //   console.log(pack([3, 3, 3, 2, 2, 5, 5, 5, 4, 1, 1, 1]));
 
     // const encode = (array) => {
@@ -354,20 +354,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // };
     // console.log(encode([3, 3, 3, 2, 2, 5, 5, 5, 4, 1, 1, 1]));
 
-    const encode = (array) => {
-      const packed = pack(array);
-      ret = [];
-      for (arr of packed) {
-        if (arr.length === 1) {
-          ret.push(arr[0]);
-        }
-        else {
-          ret.push([arr.length, arr[0]]);
-        }
-      }
-      return  ret;
-    };
-    console.log(encode([3, 3, 3, 2, 2, 5, 5, 5, 4, 1, 1, 1]));
+    // const encode = (array) => {
+    //   const packed = pack(array);
+    //   ret = [];
+    //   for (arr of packed) {
+    //     if (arr.length === 1) {
+    //       ret.push(arr[0]);
+    //     }
+    //     else {
+    //       ret.push([arr.length, arr[0]]);
+    //     }
+    //   }
+    //   return  ret;
+    // };
+    // console.log(encode([3, 3, 3, 2, 2, 5, 5, 5, 4, 1, 1, 1]));
 
 
 
