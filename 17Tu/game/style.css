@@ -10,6 +10,7 @@ body {
 .board {
   border: 1px solid black;
   height: 80vh;
+  position: relative;
 }
 
 .chip {
