@@ -62,18 +62,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       this.top = String(Math.floor(Math.random()*86)) + '%';
       this.left = String(Math.floor(Math.random()*94)) + '%';
+      this.element = document.createElement('div');
+      this.element.className = 'chip ' + this.textValue;
+      this.element.textContent = String(this.value);
+      this.element.style.top = this.top;
+      this.element.style.left = this.left;
+      this.element.addEventListener('click', () => {
+        this.element.classList.add('chip--hidden');
+        score += this.value;
+        scoreElement.textContent = `Score: ${score}`;
+      });
       this.render = () => {
-        const chipElement = document.createElement('div');
-        chipElement.className = 'chip ' + this.textValue;
-        chipElement.textContent = String(this.value);
-        chipElement.style.top = this.top;
-        chipElement.style.left = this.left;
-        chipElement.addEventListener('click', () => {
-          chipElement.classList.add('chip--hidden');
-          score += this.value;
-          scoreElement.textContent = `Score: ${score}`;
-        });
-        board.appendChild(chipElement);
+        board.appendChild(this.element);
       };
     }
   }
