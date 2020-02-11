@@ -1,0 +1,51 @@
+.contact {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+}
+
+.contact--calling {
+  background-color: magenta;
+}
+
+.contact__avatar {
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact__avatar--male {
+  background-image: url('./img/male.png');
+}
+
+.contact__avatar--female {
+  background-image: url('./img/female.png');
+}
+
+.contact__body {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.contact__callbtn {
+  border: none;
+  outline: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  background-image: url('./img/phone.png');
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.contact__name {
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.convo {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: calc(50vw - 250px);
+}

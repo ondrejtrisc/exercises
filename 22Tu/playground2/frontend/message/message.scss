@@ -1,0 +1,39 @@
+.block {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.block--local {
+  flex-direction: row-reverse;
+}
+
+.message {
+  width: 200px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.message--local {
+  background-color: lightgrey;
+
+}
+
+.message--remote {
+  background-color: blue;
+  color: white;
+}
+
+.unicorn {
+  width: 70px;
+  height: 70px;
+  background-image: url('./img/unicorn.png');
+  background-size: cover;
+}
+
+.cleverbot {
+  width: 70px;
+  height: 70px;
+  background-image: url('./img/cleverbot.png');
+  background-size: cover;
+}
