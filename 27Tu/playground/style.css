@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: orange;
+}
+
+/* img {
+  border: 1px solid black;
+} */
+
+.dark {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+}
+
+.light {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+}
