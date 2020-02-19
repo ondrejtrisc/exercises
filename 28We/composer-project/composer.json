@@ -1,0 +1,12 @@
+{
+    "name": "ondrejtrisc/composer-project",
+    "authors": [
+        {
+            "name": "ondrejtrisc",
+            "email": "57498031+ondrejtrisc@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}

@@ -10,7 +10,7 @@
 
 </head>
 <body>
-  
+  <div class="container">
   <?php
 
   require_once 'Piece.php';
@@ -32,5 +32,6 @@
   echo $d2;
 
   ?>
+  <div>
 </body>
 </html>
