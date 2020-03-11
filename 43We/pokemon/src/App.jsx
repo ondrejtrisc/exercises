@@ -50,9 +50,9 @@ export const App = () => {
 
   const pokemonElements = pokemonThumbnails.map((poke, index) => {
     return (
-      <div>
-        <img src={poke.thumbnail} />
-        <p key={`pokemon-${index}`}>{poke.name}</p>
+      <div key={`pokemon-${index}`}>
+        <img src={poke.thumbnail} alt="pokemon" />
+        <p>{poke.name}</p>
       </div>
       );
   })
